@@ -1,5 +1,6 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import Weather from "./Weather";
+import "./App.css";
 
 export default function App() {
   return (
@@ -7,6 +8,7 @@ export default function App() {
     <div className="container">
     
     <h1> Weather App </h1>
+    <Weather />
     <footer>
       This project was coded by <a href="https://github.com/nellyobi" target="_blank"> Nelly </a>  and is {" "}
     <a href="https://github.com/nellyobi/react-weather-app-project"
