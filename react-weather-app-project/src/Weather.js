@@ -30,9 +30,14 @@ export default function Weather(props) {
     }
   
     function search() {
-        const apiKey = "5ef4de8cd6b7fefcd7c42f98cf464ce8";
-        let apiUrl = `https://api.shecodes.io/weather/v1/current?query={London}&key={apiKey}`;
-        axios.get(apiUrl).then(handleResponse);
+        const apiKey = "f0da5c802d5ot8b64ac1acf8ecb78fa3";
+        let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
+        axios.get(apiUrl)
+        .then(handleResponse)
+        .catch(error => {
+                console.error("Error fetching weather data:", error);
+                setWeatherData({ ready: false });
+            });
       }
   
     if (weatherData.ready) {
