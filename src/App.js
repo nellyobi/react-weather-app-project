@@ -11,10 +11,8 @@ export default function App() {
     <Weather defaultCity="London" />
     <footer>
       This project was coded by <a href="https://github.com/nellyobi"target="_blank" rel="noreferrer"> Nelly </a>  and is {" "}
-    <a href="https://github.com/nellyobi/react-weather-app-project"
-    target='_blank'>
+      <a href="https://github.com/nellyobi/react-weather-app-project" rel="noreferrer">
 open-sourced on Github
-
     </a> 
     </footer>
     </div>
